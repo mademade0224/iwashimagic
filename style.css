@@ -73,15 +73,41 @@ h1 {
 }
 
 .plaid {
- position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
+  position: relative; /* ← 土台にする */
   background-color: #ffffff;
-  background-image:
-    repeating-linear-gradient(45deg, #ffc24047, #ffc24047 20px, transparent 20px, transparent 40px),
-    repeating-linear-gradient(-45deg, #ffc24047, #ffc24047 20px, transparent 20px, transparent 40px);
 }
-  
+
+/* 左の模様 */
+.plaid::before,
+.plaid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;      /* 模様の太さ */
+  height: 100%;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      #ffc24047,
+      #ffc24047 20px,
+      transparent 20px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      #ffc24047,
+      #ffc24047 20px,
+      transparent 20px,
+      transparent 40px
+    );
+}
+
+/* 左 */
+.plaid::before {
+  left: 0;
+}
+
+/* 右 */
+.plaid::after {
+  right: 0;
+}
