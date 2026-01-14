@@ -45,13 +45,3 @@ h1 {
  /* text-decoration: none; */
 }
 
-.bg_pattern {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffe9a7;
-  opacity: 0.4;
-  z-index: -1;
-}
