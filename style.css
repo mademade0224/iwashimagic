@@ -1,22 +1,6 @@
 body {
   font-family: "Times New Roman";
   background-color: #ffffff;
-  background-image:
-    repeating-linear-gradient(
-      45deg,
-      #ffc24047,
-      #ffc24047 20px,
-      transparent 20px,
-      transparent 40px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      #ffc24047,
-      #ffc24047 20px,
-      transparent 20px,
-      transparent 40px
-    );
-}
 
 h1 {
   font-size: 42px;
@@ -70,50 +54,4 @@ h1 {
   background-color: #ffe9a7;
   opacity: 0.4;
   z-index: -1;
-}
-
-.plaid {
-  position: relative; /* ← 土台にする */
-  min-height: 100vh; 
-  background-color: #ffffff;
-}
-
-/* 左の模様 */
-.plaid::before,
-.plaid::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 80px;      /* 模様の太さ */
-  height: 100%;
-  background-image:
-    repeating-linear-gradient(
-      45deg,
-      #ffc24047,
-      #ffc24047 20px,
-      transparent 20px,
-      transparent 40px
-      z-index: 0;
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      #ffc24047,
-      #ffc24047 20px,
-      transparent 20px,
-      transparent 40px
-    );
-}
-
-/* 左 */
-.plaid::before {
-  left: 0;
-}
-.plaid > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* 右 */
-.plaid::after {
-  right: 0;
 }
