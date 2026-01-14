@@ -45,3 +45,17 @@ h1 {
  /* text-decoration: none; */
 }
 
+.bg_pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffe9a7;
+  opacity: 0.4;
+  z-index: -1;
+}
+.Diagonal_v3 {
+  background-size: 20px 20px;
+  background-image: repeating-linear-gradient(45deg, #ffc107 0, #ffc107 2px, #ffe9a7 0, #ffe9a7 50%);
+}
