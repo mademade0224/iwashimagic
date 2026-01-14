@@ -74,6 +74,7 @@ h1 {
 
 .plaid {
   position: relative; /* ← 土台にする */
+  min-height: 100vh; 
   background-color: #ffffff;
 }
 
@@ -92,6 +93,7 @@ h1 {
       #ffc24047 20px,
       transparent 20px,
       transparent 40px
+      z-index: 0;
     ),
     repeating-linear-gradient(
       -45deg,
@@ -105,6 +107,10 @@ h1 {
 /* 左 */
 .plaid::before {
   left: 0;
+}
+.plaid > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* 右 */
