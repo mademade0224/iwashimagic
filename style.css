@@ -73,7 +73,15 @@ h1 {
 }
 
 .plaid {
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
   background-color: #ffffff;
-  background-image: repeating-linear-gradient(45deg, #ffc24047, #ffc24047 20px, transparent 20px, transparent 40px), repeating-linear-gradient(-45deg, #ffc24047, #ffc24047 20px, transparent 20px, transparent 40px);
-  height: 1000px;
+  background-image:
+    repeating-linear-gradient(45deg, #ffc24047, #ffc24047 20px, transparent 20px, transparent 40px),
+    repeating-linear-gradient(-45deg, #ffc24047, #ffc24047 20px, transparent 20px, transparent 40px);
 }
+  
