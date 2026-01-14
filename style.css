@@ -1,0 +1,44 @@
+
+h1 {
+  font-size: 42px;
+  text-align: center;  
+  color: blue;
+}
+.rainbow {
+  font-size: 48px;
+  animation: rainbow 1s linear infinite;
+}
+
+@keyframes rainbow {
+  0%   { color: red; }
+  16%  { color: orange; }
+  33%  { color: yellow; }
+  50%  { color: lime; }
+  66%  { color: cyan; }
+  83%  { color: magenta; }
+  100% { color: red; }
+}
+.notice {
+  display: flex;
+  justify-content: center; /* ページ中央 */
+}
+
+.notice-box {
+  width: 260px;            /* ← タイトルと同じ幅にする */
+  text-align: left;        /* 中身は左寄せ */
+  font-family: monospace;  /* 文字幅を揃える（超重要） */
+  color: black;
+}
+
+.notice-title {
+  display: block;        /* ← これが超重要 */
+  color: inherit;        /* 親の色を使う */
+  /* text-decoration: none;  */
+  text-align: center;      /* 飾りは中央 */
+  color: black;
+}
+
+.notice-text {
+ /* text-decoration: none; */
+}
+
