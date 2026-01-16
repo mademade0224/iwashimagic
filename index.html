@@ -52,6 +52,7 @@ document.oncontextmenu = function() {
   <br>
 <script>
   const correctPassword = "1111";
+  if (localStorage.getItem("passed") !== "yes") {
   let input;
 
   while (input !== correctPassword) {
@@ -60,6 +61,9 @@ document.oncontextmenu = function() {
 
     if (input !== correctPassword) {
       alert("残念");
+       } else {
+        // 正解したら通行証を保存
+     localStorage.setItem("passed", "yes");
     }
   }
 </script>
